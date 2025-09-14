@@ -1,7 +1,7 @@
 {
-  "name": "tsoptions",
+  "name": "@phothin/tsoptions",
   "version": "0.1.0",
-  "description": "",
+  "description": "Get TypeScript compiler options from a config file, and manipulate them programmatically.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.mjs",
@@ -12,8 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/phothinmg/tsoptions.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript",
+    "compilerOptions"
+  ],
+  "author": "Pho Thin Mg <phothinmg@disroot.org>",
   "license": "Apache-2.0",
   "type": "commonjs",
   "bugs": {
@@ -40,5 +43,9 @@
     "dist",
     "package.json",
     "README.md"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }

@@ -61,4 +61,4 @@ console.log(tsoptions.options);
 
 ## License
 
-Apache-2.0
+[ISC](LICENSE)

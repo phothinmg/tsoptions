@@ -2,9 +2,9 @@
   "name": "@phothin/tsoptions",
   "version": "0.1.1",
   "description": "Get TypeScript compiler options from a config file, and manipulate them programmatically.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.cts",
+  "module": "dist/index.js",
   "scripts": {
     "build": "tsc"
   },
@@ -17,25 +17,21 @@
     "compilerOptions"
   ],
   "author": "Pho Thin Mg <phothinmg@disroot.org>",
-  "license": "Apache-2.0",
-  "type": "commonjs",
+  "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/phothinmg/tsoptions/issues"
   },
   "homepage": "https://github.com/phothinmg/tsoptions#readme",
-  "devDependencies": {
-    "@types/node": "^24.3.3",
-    "typescript": "^5.9.2"
-  },
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     }
   },
@@ -47,5 +43,9 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "dependencies": {
+    "@types/node": "^24.5.0",
+    "typescript": "^5.9.2"
   }
 }
